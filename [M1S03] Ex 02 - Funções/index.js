@@ -1,13 +1,12 @@
-// Crie uma função não nomeada que recebe um número e devolva uma string dizendo se é par ou ímpar.
+// Crie uma função nomeada que recebe um array de elementos, imprima cada um dos elementos
+// e em seguida retorne a quantidade de elementos no array (seu tamanho).
 
-var receberNumeroDevolveString = function (num){
-if (num % 2 == 0){
-    return console.log('O valor informado é par')
-} else if (num % 2 == 1) {
-    return console.log('O valor informado é impar')
-}else {
-    return alert("Por favor informe apenas números")
-}
-}
-receberNumeroDevolveString(window.prompt("Informe um número para descobrir se ele é par ou impar"));
 
+const meuArray = [0,1,2,3,4,5,6,7,8,9]
+function receberArrayImprimirTamanho(array = []){
+for(let i=0 ; i < meuArray.length ; i++){
+    console.log("Este é o elemento da posição: "+ meuArray[i]);
+}
+return console.log("O número total de elementos do array é: "+meuArray.length)
+}
+receberArrayImprimirTamanho(meuArray);
